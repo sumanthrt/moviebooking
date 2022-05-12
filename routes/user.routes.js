@@ -4,6 +4,9 @@ module.exports = (router) => {
     router.post("/signup", userController.signUp);
     router.post("/login", userController.login);
     router.post("/logout", userController.logout);
-  
+    
+    router.get("/getcouponcode", userController.getCouponCode);
+
+    router.put("/bookshow", userController.bookShow);
     return router;
   }
