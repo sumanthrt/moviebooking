@@ -5,5 +5,6 @@ module.exports = (router) => {
 
   router.get("/movies/:movieId", movieController.findOne);
 
+  router.get("/movies:id/shows", movieController.findShows);
   return router;
 }
